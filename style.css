@@ -1,0 +1,34 @@
+
+button {
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: large;
+    border-color: blueviolet;
+    background-color: rgb(150, 147, 147);
+    
+}
+body{
+    background-color: black;
+}
+main {
+    text-align: center;
+    font-size: large;
+    display: block;
+    margin: 0;
+    padding: 70px 0;
+    border-style:ridge;
+}
+body h1{
+    text-align: center;
+    font-size:xx-large;
+    color: blueviolet;
+}
+main{
+    color: white;
+    background-color: rgb(46, 43, 43);
+    padding: 150px 70px 300px 70px;
+}
+input{
+    background-color: rgb(151, 148, 144);
+}

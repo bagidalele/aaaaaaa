@@ -1,0 +1,38 @@
+button {
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: large;
+    border-color: black;
+    background-color: rgb(99, 96, 96);
+    
+}
+body{
+    background-color: rgb(99, 87, 87);
+}
+main {
+    text-align: center;
+    font-size: large;
+    display: block;
+    margin: 0;
+    padding: 70px 0;
+    border-style: double;
+}
+body h1{
+    text-align: center;
+    font-size:xx-large;
+    color:white;
+}
+main{
+    color: white;
+    background-color: rgb(46, 43, 43);
+    padding: 150px 70px 300px 70px;
+}
+body h2{
+    text-align: center;
+    font-size:large;
+    color:white;
+}
+input{
+    background-color: rgb(151, 148, 144);
+}

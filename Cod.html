@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>cod</title>
+        <script type="text/javascript">
+
+            const calculaNota = () =>{
+                const jaJogou = document.notaForm.elements["jaJogou"].value;
+
+                const gostou = document.notaForm.elements["gostou"].value;
+                
+                const nota = (jaJogou+gostou)/2;
+
+                if(nota>=0 && nota<=4 ){
+                    alert("Você não gosta desse jogo");
+                }
+                else if(nota>=5 && nota<6){
+                    alert("Você gosta pouco desse jogo");
+                }
+                else if(nota>=7){
+                    alert("Você gosta muito desse jogo");
+                }
+}
+        </script>
+        <link rel="stylesheet" href="cod.css"> 
+    </head>
+    <body>
+        <h1>Games Legais</h1>
+        <h2>Call of Dutty</h2>
+        <main>
+            <p> Call of Duty é uma série de jogos eletrônicos de tiro em primeira pessoa e franquia de mídia publicada pela Activision.</p>
+            <p> O primeiro título da série foi lançado em 2003 exclusivamente para computadores. Mais tarde a série se expandiu para os mais variados sistemas, consoles, portáteis e smartphones. Os três primeiros títulos da série se concentram em jogos ambientados na Segunda Guerra Mundial, apresentando batalhas e acontecimentos históricos daquele período. Com o tempo, a série viu jogos ambientados na Guerra Fria, em tempos atuais, mundos futuristas até o espaço sideral. O título mais recente, Call of Duty: Modern Warfare III, foi lançado em 10 de novembro de 2023.</p>
+            <P> Os jogos da série Call of Duty são publicados pela Activision. Enquanto que o estúdio Infinity Ward ainda é o principal produtor, a Treyarch também já produziu alguns títulos onde a história está interligada entre eles. Alguns jogos já foram produzidos pela Gray Matter Interactive, Nokia, Exakt Entertainment, Spark Unlimited, Amaze Entertainment, n-Space, Aspyr, Rebellion Developments, Ideaworks Game Studio, Sledgehammer Games, Raven Software e nStigate Games.</P>
+            <p> Em janeiro de 2016, já tinham sido vendidas mais de 250 milhões de cópias de jogos Call of Duty. Em particular, Call of Duty: Black Ops II foi o jogo mais vendido da série, com um total de 30.5 milhões de cópias vendidas, sendo superado pelo reboot de 2019, Call of Duty: Modern Warfare. De acordo com a Activision, as vendas dos jogos Call of Duty já ultrapassaram os US$15 bilhões. Em abril de 2021, a série já havia vendido mais de 400 milhões de cópias. Os primeiros jogos da série foram lançados com aclamação universal, com elogios em maior parte direcionados a história, enredo, e o seu modo multijogador estabelecido, mas vários dos títulos recentes receberam críticas mistas, com elogios a evolução da jogabilidade e gráficos da série, enquanto que algumas críticas foram direcionadas a sua repetitividade anual.</p>
+            
+            <form id="notaForm" name="notaForm" action="#">
+                <label for="jaJogou">De 0 a 10, quanto você jogou esse jogo?</label>
+                <input type="text" id="jaJogou" name="jaJogou">
+                <br>
+
+                <label for="gostou">De 0 a 10, quanto você gostou de jogá-lo?</label>
+                <input type="text" id="gostou" name="gostou">
+                <br>
+
+                <input type="submit" value="Calcular" onclick="calculaNota()">
+            </form>
+            <p>
+                <a href="index.html"><button>Voltar</button></a>
+            </p>
+        </main>
+    </body>
+
+
+</html>

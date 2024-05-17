@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minecraft</title>
+        <script type="text/javascript">
+
+            const calculaNota = () =>{
+                const jaJogou = document.notaForm.elements["jaJogou"].value;
+
+                const gostou = document.notaForm.elements["gostou"].value;
+                
+                const nota = (jaJogou+gostou)/2;
+
+                if(nota>=0 && nota<=4 ){
+                    alert("Você não gosta desse jogo");
+                }
+                else if(nota>=5 && nota<6){
+                    alert("Você gosta pouco desse jogo");
+                }
+                else if(nota>=7){
+                    alert("Você gosta muito desse jogo");
+                }
+}
+        </script>
+        <link rel="stylesheet" href="mine.css">
+    </head>
+    <body>
+        <h1>Games Legais</h1>
+        <h2>Minecraft</h2>
+        <main>
+            <p>Minecraft é um jogo eletrônico sandbox de sobrevivência criado pelo desenvolvedor sueco Markus "Notch" Persson e posteriormente desenvolvido e publicado pela Mojang Studios, cuja propriedade intelectual foi obtida pela Microsoft em 2014. Lançado inicialmente em maio de 2009 como um projeto em desenvolvimento, seu lançamento completo ocorreu em novembro de 2011 para Microsoft Windows, macOS, Linux e alguns dispositivos móveis, sendo posteriormente relançado para uma ampla variedade de plataformas. É o jogo eletrônico mais vendido de todos os tempos, vendendo mais de 300 milhões de cópias em todas as plataformas até outubro de 2023, com mais de 140 milhões de jogadores ativos mensalmente.</p>
+            <p>Em Minecraft, os jogadores exploram um mundo aberto tridimensional intencionalmente em blocos, pixelizado e gerado proceduralmente, podendo descobrir e extrair matérias-primas, ferramentas artesanais, construir estruturas ou terraplenagens e, dependendo do modo de jogo, podem combater inimigos controlados por computador, bem como cooperar ou competir contra outros jogadores no mesmo mundo. Esses modos incluem um modo sobrevivência, no qual o jogador precisa adquirir recursos para construir o mundo e se manter vivo, e um modo criativo, onde os jogadores têm recursos ilimitados. Em Java Edition, os jogadores podem modificar a jogabilidade com mods para criar novas mecânicas de itens, texturas, entre outros.</p>
+            <p>Minecraft é aclamado pela crítica, ganhando vários prêmios e sendo considerado como um dos melhores e mais influentes jogos eletrônicos de todos os tempos. As redes sociais, paródias, adaptações, mercadorias e convenções anuais de MineCon tiveram um papel fundamental na popularização do jogo. Também tem sido usado em ambientes educacionais, especialmente no campo de sistemas da computação, já que computadores virtuais e dispositivos de hardware foram construídos nele. Vários títulos spin-off também foram desenvolvidos, tais como Minecraft: Story Mode (2015), Minecraft Earth (2019), Minecraft Dungeons (2020) e Minecraft Legends (2023).</p>
+            
+            <form id="notaForm" name="notaForm" action="#">
+                <label for="jaJogou">De 0 a 10, quanto você jogou esse jogo?</label>
+                <input type="text" id="jaJogou" name="jaJogou">
+                <br>
+
+                <label for="gostou">De 0 a 10, quanto você gostou de jogá-lo?</label>
+                <input type="text" id="gostou" name="gostou">
+                <br>
+
+                <input type="submit" value="Calcular" onclick="calculaNota()">
+            </form>
+
+
+            <p>
+                <a href="index.html"><button id="meuBotao">Voltar</button></a>
+            </p>
+            </main>
+
+</html>
